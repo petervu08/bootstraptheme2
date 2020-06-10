@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+/* all the contains in the browser window and does not overflow outside of it */ 
+/* class offset to account for the space the navigation takes up */
+/* margin-top: -4rem; takes away the space but still account  for the space in the section*/
+/* Body CSS */
+
+body{
+    overflow-x: auto; 
+    font-family: 'Lato'; sans-serif; 
+    color: #505962; 
+}
+
+.offset:before{
+	display: block; 
+	content: ""; 
+	height: 4rem; 
+  margin-top: -4em; 
+}
+
+
+/* Navigation CSS */
+
+.navbar{
+  text-transform: uppercase; 
+  font-weight: 700;
+  font-size: .9rem; 
+  letter-spacing: .1rem; 
+  background: rgba (0, 0, 0, 0.6); !important;  
+}
+
+/* Logo CSS */
+.navbar-brand img{
+  height: 2rem; 
+}
+
+.navbar-nav li{
+  padding-right: .7rem;
+}
+.navbar-nav .navbar-nav .nav-link{
+  color: white; 
+  padding-top: .8rem; 
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #1ebba3; 
+}
+
+/* Landing Page CSS */
+
+.home-inner{
+  background-image: url(img/computers.png); 
+}
+
+/* width 100% max-width 100% so when your website sizes down the content will not go off the screen*/
+/* with the position absolute you can move your content top*/
+.caption{
+    width: 100%;
+    max-width: 100%; 
+    position: absolute; 
+    top: 38%; 
+    z-index: 1; 
+    color: white; 
+    text-transform: uppercase; 
+}
+
+.caption h1{
+    font-size: 3.8rem; 
+    font-weight: 700; 
+    letter-spacing: .3rem; 
+    text-shadow: .1rem .1rem .8rem black; 
+    padding-bottom: 1rem; 
+}
+
+.caption h3{
+  font-size: 2rem; 
+  text-shadow: .1rem .1rem. .5em black; 
+  padding-bottom: 1.6rem; 
+}
+
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem; 
+  font-size: 1.1rem; 
+}
+
+/* Start of Course Section Stylining */
+
+.narrow{
+	width: 75%; 
+	margin: 1.5rem auto;
+	padding-top: 2rem; 
+}
+.narrow h1{
+	font-size: 2.4rem; 
+}
+.btn-secondary{
+	border-width: medium; 
+	border-radius: 0; 
+	text-transform: uppercase; 
+	font-size: 1.2rem; 
+	padding : .6rem 1.2rem; 
+	margin: 1rem;
+	color: white; 
+	background-color: #1ebba3; 
+	border-color: #1ebba3; 
+}
+.btn-secondary:hover{
+	background-color: #189582;
+	border-color: #189582; 
+}
+
+/* Start of features section CSS */
+/*padding on top 0 for left right */ 
+/* border-radius will be taken out */
+
+.jumbotron{
+	margin-bottom: 0;
+  padding: 2 rem 0 3.5 rem; 
+  border-radius: 0; 
+}
+h3.heading{
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase; 
+  margin-bottom: 1.9 rem; 
+}
+.heading-underline{
+  width: 3rem; 
+  height: .2rem; 
+  background-color: #1ebba3; 
+  margin: 0 auto 2rem;
+}
+.feature svg.svg-inline--fa{
+  color: #1ebba3; 
+}
+.feature h3{
+  font-size: 1.3rem; 
+  text-transform: uppercase; 
+  padding-bottom: .4rem; 
+}
+.feature p{
+  font-size: 1.1rem; 
+}
+
+/* End of the Features Section in CSS */
+
+
+/* Start of Resources Section in CSS */
+/* background image will be set to a z index -1 to place image behind the 
+text*/
+/* Padding top and bottom 7rem and 2rem left and right */
+
+.fixed {
+  background-image: url(img/apple.png); 
+  z-index: -1; 
+}
+.dark{
+  background-color: rgba(0, 0, 0, 0.75); 
+  color: white; 
+  padding:  7rem 2rem; 
+}
+.fixed-background h3{
+ margin-bottom: 2rem; 
+}
+
+.fixed-background p{
+ margin-top: 1.5rem; 
+}
+
+/*End of the Resources Section in CSS*/
+
+/* Start of the Client Section in CSS */
+/* Referenced blockquote from html and referenced svg-inline-fa from html*/
+.clients img {
+    width: 100%; 
+    border-radius: 50%; 
+}
+blockquote .svg-inline--fa{
+    color: #1ebba3; 
+    margin: 1rem; 
+}
+
+.clients-hr {
+  border-top: .05rem solid #1ebba3; 
+}
+
+/* End of the Client Section in CSS */
+
+/* Start of the Contact Section CSS */
+/* top padding 2 rem right and left are 0 and bottom padding is 2rem */
+footer{
+ background-color: #40474e; 
+ color: white; 
+ padding: 2rem 0 2rem; 
+ margin-top: 1rem; 
+}
+/* margin top and bottom padding are 1.5 rem and right and left padding is 0 */
+footer img{
+   height: 3rem; 
+   margin: 1.5 rem 0; 
+}
+
+footer a{
+  color: white; 
+}
+
+/* top margin is 1.2 rem, right padding .5 rem. bottom padding is 0 and left padding is 0*/
+footer svg.svg-inline--fa{
+  font-size: 1.6 rem; 
+  margin: 1.2 rem .5 rem 0 0; 
+}
+footer svg.svg-inline--fa:hover{
+  color: #1ebba3!important; 
+}
+
+hr.socket{
+  width:100%; 
+  border-top: .2rem solid #666b71; 
+  margin-top: 3rem; 
+}
+
+/* Media Queries */
+
+@media (max-width: 767px){
+.caption h1{
+    font-size: 2.3rem; 
+    letter-spacing: .15rem;
+    padding-bottom: .5rem; 
+}
+
+.caption h3{
+  font-size: 1.2rem;
+  padding-bottom: 1.2rem; 
+}
+
+.btn-lg{
+  padding: .5rem 1rem; 
+  font-size: 1rem; 
+}
+
+.narrow h1{
+  font-size: 1.5 rem; 
+}
+.clients img {
+    max-width: 50%; 
+    display: block; 
+    margin: 0 auto; 
+}
+}
+
+
+
+
+/* End of Media Queries */
+
+
+/* End of the Contaction Section in CSS */
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
